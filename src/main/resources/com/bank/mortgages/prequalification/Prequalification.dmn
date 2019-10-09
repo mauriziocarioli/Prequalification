@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<semantic:definitions xmlns:semantic="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.trisotech.com/definitions/_17712e87-6acf-4200-b0e6-0d6ee73935a5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:drools="http://www.drools.org/kie/dmn/1.2" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rss="http://purl.org/rss/2.0/" xmlns:trisodmn="http://www.trisotech.com/2016/triso/dmn" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:triso="http://www.trisotech.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_17712e87-6acf-4200-b0e6-0d6ee73935a5" name="Prequalification" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.trisotech.com/definitions/_17712e87-6acf-4200-b0e6-0d6ee73935a5">
+<semantic:definitions xmlns:semantic="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.trisotech.com/definitions/_17712e87-6acf-4200-b0e6-0d6ee73935a5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:drools="http://www.drools.org/kie/dmn/1.2" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rss="http://purl.org/rss/2.0/" xmlns:trisodmn="http://www.trisotech.com/2016/triso/dmn" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:triso="http://www.trisotech.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_17712e87-6acf-4200-b0e6-0d6ee73935a5" name="Prequalification" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.bank.com/definitions/_17712e87-6acf-4200-b0e6-0d6ee73935a5">
   <semantic:extensionElements/>
   <semantic:decision id="_0a86ba59-6c6a-45ba-b78b-58a7f9aed5cd" name="Debt to income ratio">
     <semantic:variable id="_fdef5bc4-a5b8-4c5a-87f9-1f5d2d23c17d" name="Debt to income ratio" typeRef="Any"/>
@@ -22,11 +22,11 @@
   <semantic:inputData id="_232196b3-cfb6-42e6-b5cd-c421992cc317" name="Downpayment">
     <semantic:variable id="_5aea46cd-97c8-400a-8621-e8682325f524" name="Downpayment" typeRef="string"/>
   </semantic:inputData>
-  <semantic:inputData id="_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" name="Monthly debts">
-    <semantic:variable id="_9e75a734-e9d6-44f5-bcbb-06b2c2fe4bbf" name="Monthly debts" typeRef="string"/>
-  </semantic:inputData>
   <semantic:inputData id="_54ebdd4d-fbc7-44bd-8df0-75fe46f275b4" name="Purchase price">
     <semantic:variable id="_a78148f1-f41f-4af5-850c-bb2579a8a0cc" name="Purchase price" typeRef="string"/>
+  </semantic:inputData>
+  <semantic:inputData id="_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" name="Monthly debts">
+    <semantic:variable id="_9e75a734-e9d6-44f5-bcbb-06b2c2fe4bbf" name="Monthly debts" typeRef="string"/>
   </semantic:inputData>
   <semantic:decision id="_06fea9d6-9d4f-48ba-a45f-716bceedbeaa" name="Monthly payments">
     <semantic:variable id="_8fea95d0-d197-40c0-81f2-7d8b8e1be0d4" name="Monthly payments" typeRef="Any"/>
@@ -146,15 +146,6 @@
         <dc:Bounds x="523.7588291168213" y="642" width="135.48234176635742" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" dmnElementRef="_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" isCollapsed="false">
-        <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="524.3091865343468" y="313.2105263157895" width="135.48234176635742" height="60"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_54ebdd4d-fbc7-44bd-8df0-75fe46f275b4" dmnElementRef="_54ebdd4d-fbc7-44bd-8df0-75fe46f275b4" isCollapsed="false">
         <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -162,6 +153,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="523.7588291168213" y="543" width="135.48234176635742" height="60"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" dmnElementRef="_27c16d5a-c984-4ba8-ba1c-e0757fd39b60" isCollapsed="false">
+        <dmndi:DMNStyle fontFamily="arial,helvetica,sans-serif" fontSize="11">
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="524.3091865343468" y="313.2105263157895" width="135.48234176635742" height="60"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_06fea9d6-9d4f-48ba-a45f-716bceedbeaa" dmnElementRef="_06fea9d6-9d4f-48ba-a45f-716bceedbeaa" isCollapsed="false">

@@ -34,7 +34,7 @@
       <semantic:requiredDecision href="#_a35e506c-2654-4189-bd09-56c8fd4b4f9e"/>
     </semantic:informationRequirement>
     <semantic:literalExpression id="_9a4f14dd-4041-4103-81ec-e42367f0c54f" typeRef="Any">
-      <semantic:text>"Loan amount"*0.03/12/(1-(1+0.03/12)**-300)</semantic:text>
+      <semantic:text>"Loan amount"*(0.03/12)/(1-(1+0.03/12)**-300)</semantic:text>
     </semantic:literalExpression>
   </semantic:decision>
   <semantic:decision id="_b8583602-c73b-4599-b388-c07761fae3bb" name="Eligibility">

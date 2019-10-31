@@ -1,0 +1,27 @@
+== Mortgage Prequalification
+
+
+Using Decision Modeling Notation.
+
+Get the model at
+http://localhost:8080/kie-server/services/rest/server/containers/Prequalification_1.0.0-SNAPSHOT/dmn
+
+Execute it at 
+http://localhost:8080/kie-server/services/rest/server/containers/Prequalification_1.0.0-SNAPSHOT/dmn
+by posting the following JSON payload
+
+[Source,JSON]
+----
+{
+    "model-namespace": "http://www.bank.com/definitions/_17712e87-6acf-4200-b0e6-0d6ee73935a5",
+    "model-name": "Prequalification",
+    "decision-name": [],
+    "decision-id": [],
+    "dmn-context": {
+        "Purchase price": 100000,
+        "Downpayment": 20000,
+        "Monthly income": 6000,
+        "Monthly debts": 1000
+    }
+}
+----

@@ -13,7 +13,7 @@
       <semantic:requiredInput href="#_27c16d5a-c984-4ba8-ba1c-e0757fd39b60"/>
     </semantic:informationRequirement>
     <semantic:literalExpression id="_0f7e5734-b563-421b-999e-2d1aa70f92e4" typeRef="Any">
-      <semantic:text>(Monthly payments+Monthly debts)/Monthly income</semantic:text>
+      <semantic:text>decimal((Monthly payments+Monthly debts)/Monthly income,2)</semantic:text>
     </semantic:literalExpression>
   </semantic:decision>
   <semantic:inputData id="_10014332-8967-47c1-8dee-273d378396af" name="Monthly income">
@@ -34,7 +34,7 @@
       <semantic:requiredDecision href="#_a35e506c-2654-4189-bd09-56c8fd4b4f9e"/>
     </semantic:informationRequirement>
     <semantic:literalExpression id="_9a4f14dd-4041-4103-81ec-e42367f0c54f" typeRef="Any">
-      <semantic:text>Loan amount*(0.03/12)/(1-(1+0.03/12)**-300)</semantic:text>
+      <semantic:text>decimal(Loan amount*(0.03/12)/(1-(1+0.03/12)**-300),2)</semantic:text>
     </semantic:literalExpression>
   </semantic:decision>
   <semantic:decision id="_b8583602-c73b-4599-b388-c07761fae3bb" name="Eligibility">

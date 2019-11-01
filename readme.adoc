@@ -24,4 +24,3 @@ by posting the following JSON payload
         "Monthly debts": 1000
     }
 }
-----
